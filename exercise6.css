@@ -1,0 +1,73 @@
+/* Reset default padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style: none; /* Remove bullets */
+  display: flex;
+  gap: 20px;
+  background-color: #004d40;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.nav-list li {
+  /* space between items */
+}
+
+.nav-link {
+  color: #a7ffeb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Link states */
+.nav-link:link {
+  color: #a7ffeb;
+}
+
+.nav-link:visited {
+  color: #80cbc4;
+}
+
+.nav-link:hover {
+  background-color: #00796b;
+  color: #ffffff;
+}
+
+.nav-link:active {
+  color: #004d40;
+  background-color: #b2dfdb;
+}
+
+/* Link list styling */
+.link-list {
+  list-style-type: disc; /* Default bullet */
+  list-style-position: inside;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.link-list li {
+  margin-bottom: 8px;
+}
+
+/* Style all links in the link-list */
+.link-list a {
+  color: #004d40;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.link-list a:hover {
+  color: #00796b;
+  text-decoration: none;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Web Design with Media Queries</title>
+  <style>
+    /* Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 5vw;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+
+    nav a {
+      color: #0a9396;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #94d2bd;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .content img {
+      width: 60vw;  /* Flexible width */
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+      padding: 0 10px;
+    }
+
+    /* Media Query for devices smaller than 768px */
+    @media (max-width: 767px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 1rem;
+      }
+
+      .content img {
+        width: 90vw;  /* Increase width but keep margin */
+        max-width: none;
+      }
+
+      .content p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Local Community Event Portal</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Events</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="content">
+    <img src="https://via.placeholder.com/600x300" alt="Community Event" />
+    <p>
+      Welcome to the Local Community Event Portal! Stay updated with all the exciting happenings around town. Whether it’s festivals, workshops, or volunteer opportunities, we’ve got you covered.
+    </p>
+    <p>
+      Browse through upcoming events, find details, and connect with other community members. Our portal is designed to work seamlessly on any device, from desktops to smartphones.
+    </p>
+  </section>
+
+</body>
+</html>

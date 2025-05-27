@@ -1,0 +1,40 @@
+/* Universal selector: reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element selector: style all <h2> */
+h2 {
+  color: darkblue;
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* ID selector: #mainHeader for the banner */
+#mainHeader {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Class selector: .eventCard for event containers */
+.eventCard {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Grouping selector: style <h3> and <p> together */
+h3, p {
+  font-family: 'Georgia', serif;
+  color: #333;
+  margin-bottom: 8px;
+}
